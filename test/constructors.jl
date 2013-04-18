@@ -21,4 +21,5 @@ mylm1 = LinearModel(myss)
 mylm2 = LinearModel(mytf)
 @assert is(mylm1,mylm2)
 
-
+@assert is(mylm1.tf, mytf)
+@assert is(mylm2.ss, myss)
