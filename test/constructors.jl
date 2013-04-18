@@ -16,5 +16,9 @@ myss = SS(A,B,C,D)
 # Transfer Function
 mytf = TF(num,den)
 
+# Linear Model
+mylm1 = LinearModel(myss)
+mylm2 = LinearModel(mytf)
+@assert is(mylm1,mylm2)
 
 
